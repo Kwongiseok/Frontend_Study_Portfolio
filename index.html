@@ -19,10 +19,6 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <h1>Heading</h1>
-    <h2>Heading</h2>
-    <h3>Heading</h3>
-    <p>Paragraph</p>
     <!-- NavBar -->
     <nav id="navbar">
       <div class="navbar__logo">
@@ -31,7 +27,7 @@
       </div>
       <div class="navbar__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
+          <li class="navbar__menu__item">Home</li>
           <li class="navbar__menu__item">About</li>
           <li class="navbar__menu__item">Skills</li>
           <li class="navbar__menu__item">My Work</li>
@@ -57,7 +53,7 @@
       <button class="home__contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
       <h1>About Me</h1>
       <p>
         프론트엔드 & 백엔드에 관심이 많으며, 새로운 웹 서비스 개발을 만들고자
@@ -72,21 +68,21 @@
           <div class="major__icon">
             <i class="fab fa-html5"></i>
           </div>
-          <div class="major__title">Front-End</div>
+          <h2 class="major__title">Front-End</h2>
           <div class="major__discription">HTML , CSS , JavaScript</div>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-python"></i>
           </div>
-          <div class="major__title">Python-Language</div>
+          <h2 class="major__title">Python-Language</h2>
           <div class="major__discription">Python</div>
         </div>
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-java"></i>
           </div>
-          <div class="major__title">Java</div>
+          <h2 class="major__title">Java</h2>
         </div>
       </div>
       <div class="School">
@@ -95,12 +91,14 @@
           alt="My_School Logo"
           class="School_logo"
         />
-        <p class="school_name">Soongsil University</p>
-        <p class="school_period">2016.03.02 ~</p>
+        <div class="School__description">
+          <p class="school__name">Soongsil University</p>
+          <p class="school__period">2016.03.02 ~</p>
+        </div>
       </div>
     </section>
     <!-- skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -191,7 +189,7 @@
       </div>
     </section>
     <!-- work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
@@ -224,7 +222,7 @@
       </div>
     </section>
     <!-- testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>
       <div class="testimonial">
@@ -244,7 +242,7 @@
       </div>
     </section>
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">ri2377@naver.com</h2>
       <div class="contact__links">
