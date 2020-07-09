@@ -66,14 +66,17 @@ workBtnContainer.addEventListener("click", (e) => {
   if (filter == null) {
     return;
   }
-
-  projects_.forEach((projects) => {
-    if (filter === "*" || filter === projects.dataset.type) {
-      projects.classList.remove("invisible");
-    } else {
-      projects.classList.add("invisible");
-    }
-  });
+  projectContainer.classList.add("anim-out");
+  setTimeout(() => {
+    projects_.forEach((projects) => {
+      if (filter === "*" || filter === projects.dataset.type) {
+        projects.classList.remove("invisible");
+      } else {
+        projects.classList.add("invisible");
+      }
+    }); /*비동기적으로 실행해줘야 애니메이션이 자연스러워진다.*/
+    projectContainer.classList.remove("anim-out");
+  }, 300);
 });
 
 function scrollIntoView(selector) {
