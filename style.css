@@ -173,6 +173,11 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+  background-color: var(--color-pink);
+  transition: var(--animation-duration);
+  transform: scale(1.03);
+}
 /* Section Common */
 .section {
   padding: 50px;
